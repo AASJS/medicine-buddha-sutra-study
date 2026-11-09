@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>「药师佛经文」知识库 · 全文件学习报告</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  :root{
+    --ink:#243a37; --ink2:#3a4a46; --sub:#6f8a82;
+    --jade:#3f7d77; --jade-d:#2f6f6a; --gold:#bcae7a; --gold-d:#a18a4d;
+    --bg:#eef5f3; --bg2:#e1ecec; --card:#ffffff; --line:#c3d6d4;
+  }
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Noto Serif SC","Songti SC","Source Han Serif SC",STSong,SimSun,serif;
+    color:var(--ink); line-height:1.8;
+    background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);
+    padding:0 0 80px;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:0 22px;}
+  header{
+    background:linear-gradient(135deg,#2f6f6a 0%,#3f7d77 55%,#5a9b94 100%);
+    color:#f3faf8; padding:54px 22px 46px; text-align:center;
+    border-bottom:4px solid var(--gold);
+  }
+  header h1{font-size:34px;letter-spacing:.06em;font-weight:700;margin-bottom:10px;}
+  header .meta{font-size:15px;color:#d7ece8;letter-spacing:.18em;}
+  header .tag{display:inline-block;margin-top:18px;padding:6px 18px;border:1px solid var(--gold);
+    border-radius:0;font-size:13px;letter-spacing:.2em;color:#f0e6c9;}
+  h2{font-size:24px;color:var(--jade-d);margin:46px 0 16px;
+    padding-left:14px;border-left:6px solid var(--gold);letter-spacing:.05em;}
+  h3{font-size:18px;color:var(--jade);margin:26px 0 10px;letter-spacing:.04em;}
+  p{margin:10px 0;color:var(--ink2);}
+  .muted{color:var(--sub);font-size:14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:0;
+    padding:20px 22px;margin:16px 0;box-shadow:0 4px 16px rgba(40,90,90,.06);}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px;}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top;}
+  th{background:#dcebe8;color:var(--jade-d);font-weight:600;letter-spacing:.05em;}
+  tr:nth-child(even) td{background:#f6faf9;}
+  .pill{display:inline-block;padding:2px 10px;border-radius:0;font-size:12px;
+    background:var(--jade);color:#fff;letter-spacing:.1em;}
+  .pill.gold{background:var(--gold-d);}
+  .pill.gray{background:#9aa8a4;}
+  code{background:#eef4f2;padding:2px 7px;border-radius:0;font-size:13px;
+    font-family:"SFMono-Regular",Consolas,"Noto Sans Mono",monospace;color:var(--jade-d);}
+  .flow{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch;margin:18px 0;}
+  .node{flex:1 1 150px;background:#fff;border:1px solid var(--jade);border-radius:0;
+    padding:14px 12px;text-align:center;position:relative;}
+  .node .t{font-weight:700;color:var(--jade-d);font-size:15px;}
+  .node .d{font-size:12px;color:var(--sub);margin-top:6px;}
+  .arrow{align-self:center;color:var(--gold-d);font-size:22px;font-weight:700;flex:0 0 auto;}
+  .legend{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 0;}
+  .callout{border-left:4px solid var(--gold);background:#fbf7ec;padding:14px 18px;margin:16px 0;}
+  .callout b{color:var(--gold-d);}
+  ul{margin:10px 0 10px 22px;} li{margin:6px 0;color:var(--ink2);}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:680px){.grid2{grid-template-columns:1fr;}}
+  footer{text-align:center;color:var(--sub);font-size:13px;margin-top:50px;letter-spacing:.1em;}
+  .toc{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0;}
+  .toc a{font-size:13px;color:var(--jade-d);text-decoration:none;border:1px solid var(--line);
+    padding:6px 12px;border-radius:0;background:#fff;}
+  .toc a:hover{background:#dcebe8;}
+  .quote{font-style:normal;color:var(--jade-d);background:#f1f8f6;border-left:3px solid var(--jade);
+    padding:6px 12px;display:inline-block;margin:4px 0;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>「药师佛经文」知识库 · 全文件学习报告</h1>
+  <div class="meta">IMA 知识库 AASJS / 药师佛经文 · 共 6 个文件</div>
+  <div class="tag">通读全库 · 项目全貌 · 进度与续作路线</div>
+</header>
+
+<div class="wrap">
+
+  <div class="toc">
+    <a href="#overview">① 知识库总览</a>
+    <a href="#files">② 逐文件摘要</a>
+    <a href="#arch">③ 项目架构</a>
+    <a href="#progress">④ 进度与缺口</a>
+    <a href="#keypoints">⑤ 核心要点</a>
+    <a href="#next">⑥ 续作建议</a>
+  </div>
+
+  <!-- ================= 总览 ================= -->
+  <h2 id="overview">① 知识库总览</h2>
+  <p class="muted">学习日期：2026-11-09 · 来源：IMA 知识库「药师佛经文」</p>
+  <p>该知识库并非只存一部经文，而是一整套面向「<b>圣为</b>」风格的《药师经》<b>知识卡脚手架</b>：以 CBETA 校对本为底本，把经文拆成可随身读的图文卡片（9:16 高清 PNG）。其中 1 个文件是经文本身，另外 5 个是可复用的项目资产（说明 / 数据 / 脚本 / 配图提示词 / 标准建议）。</p>
+
+  <div class="card">
+    <table>
+      <thead><tr><th>文件</th><th>类型</th><th>在项目中扮演的角色</th></tr></thead>
+      <tbody>
+        <tr><td><code>KR6i0047_001.txt</code></td><td>经文原文</td><td>底本：《佛说药师如来本愿经》CBETA T14n0449，隋·达磨笈多译（五种汉译中最早）</td></tr>
+        <tr><td><code>README_20261109_051333.md</code></td><td>项目说明</td><td>「圣为卡片」图文卡项目说明：数据驱动、9:16 PNG、净琉璃青金版式</td></tr>
+        <tr><td><code>药师经卡片数据.json</code></td><td>卡片数据</td><td>十二大愿 12 条骨架（文案单一数据源），目前仅「金句」已填</td></tr>
+        <tr><td><code>药师经出卡脚本_make_card.py</code></td><td>出卡脚本</td><td>读 JSON → 渲染 2160×3840 PNG（playwright），含防溢出硬校验</td></tr>
+        <tr><td><code>配图提示词_20261109_051335.md</code></td><td>配图提示词</td><td>12 竖版 + 3 横幅配图的净琉璃青金中文提示词与构图铁律</td></tr>
+        <tr><td><code>药师经开发标准建议.md</code></td><td>标准建议</td><td>把本项目沉淀为「开发标准」库资产（L0–L5、四类对象），含佛经图文卡红线</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ================= 逐文件 ================= -->
+  <h2 id="files">② 逐文件摘要</h2>
+
+  <h3>1 · 经文原文 <span class="pill">底本</span> <code>KR6i0047_001.txt</code></h3>
+  <div class="card">
+    <p>《佛说药师如来本愿经》一卷，<b>隋·天竺三藏达磨笈多</b>译，CBETA 编号 <code>T14n0449</code>、高丽藏 <code>KR6i0047</code>。是《药师琉璃光如来本愿功德经》五种汉译中<b>年代最早</b>的一种，文字最为古朴。</p>
+    <p>全经结构：<b>序分</b>（佛在广严城乐音树下，曼殊室利启请）→ <b>正宗分</b>（药师如来十二大愿、净琉璃世界、日光/月光二菩萨、闻名灭罪、受持功德与往生、供养仪轨、救脱菩萨说九横死与七难）→ <b>流通分</b>（十二药叉大将誓护持经，大梵天王等闻法欢喜）。</p>
+    <p class="muted">注：本文件已在上一轮被通读并生成《药师经学习手册》，本报告聚焦「全库其余 5 个工程文件」。</p>
+  </div>
+
+  <h3>2 · 项目说明 <span class="pill gold">脚手架</span> <code>README_20261109_051333.md</code></h3>
+  <div class="card">
+    <p>标题「药师琉璃光如来 · 圣为卡片」，定位为《药师经》图文卡项目的<b>入口说明</b>。要点：</p>
+    <ul>
+      <li><b>数据驱动出卡</b>：文案写在 <code>药师经/卡片数据.json</code>，改 JSON 即改文案，脚本自动缩排并校验「白话/深一层/收尾」三段齐全、不溢出，统一 2160×3840。</li>
+      <li><b>统一版式</b>：金框、编号胶囊、金句区 + 三段式解读（白话 / 深一层 / 收尾）、关键词页脚。</li>
+      <li><b>净琉璃配图</b>：中国风工笔，敦煌壁画与水墨结合，净琉璃青金设色，符号化横幅插画，无水印。</li>
+      <li><b>逐字出处</b>：金句取自 CBETA T14n0449 隋·达摩笈多译，不编造、标出处。</li>
+      <li><b>移植来源</b>：明确说明本脚手架移植自《地藏经》图文卡项目 <code>AASJS/dizangjing-cards</code>（「艳暖的地藏经卡片 · 渡凡」），仅替换经文数据源与视觉主题（敦煌暖金 → 净琉璃青金）。</li>
+    </ul>
+  </div>
+
+  <h3>3 · 卡片数据 <span class="pill gray">草稿</span> <code>药师经卡片数据.json</code></h3>
+  <div class="card">
+    <p>十二大愿 12 条卡片的<b>单一数据源</b>。每条字段：<code>no</code>（支持 <code>01</code>/<code>01-1</code> 子序）、<code>编号</code>（朱绿「正文 壹」）、<code>品名/品名全/品名短</code>、<code>副题</code>、<code>金句</code>+<code>出处</code>、<code>白话</code>、<code>深一层</code>、<code>收尾</code>、<code>关键词</code>、<code>配图</code> 路径、<code>status:"draft"</code>。</p>
+    <p><b>现状：12 张全部为 draft，且仅「金句」已填</b>——「白话 / 深一层 / 收尾」均为占位 <code>（待填）</code>。也就是说，愿心骨架已立，但解读文案尚未动笔。下表列出 12 愿的「金句」（已就绪部分）：</p>
+    <table>
+      <thead><tr><th>no</th><th>品名短</th><th>副题</th><th>金句（节选）</th></tr></thead>
+      <tbody>
+        <tr><td>01</td><td>第一大愿</td><td>自身光明，照曜无量</td><td class="quote">自身光明炽然，照耀无量世界</td></tr>
+        <tr><td>02</td><td>第二大愿</td><td>身如琉璃，内外清彻</td><td class="quote">身如琉璃，内外清彻，净无瑕秽</td></tr>
+        <tr><td>03</td><td>第三大愿</td><td>智慧方便，受用无尽</td><td class="quote">以无量无边智慧方便，令诸有情，皆得无尽所受用物</td></tr>
+        <tr><td>04</td><td>第四大愿</td><td>安住菩提，不堕邪道</td><td class="quote">若诸有情，行邪道者，悉令安住菩提道中</td></tr>
+        <tr><td>05</td><td>第五大愿</td><td>戒行清净，不堕恶趣</td><td class="quote">闻我名已，还得清净，不堕恶趣</td></tr>
+        <tr><td>06</td><td>第六大愿</td><td>诸根具足，无诸疾苦</td><td class="quote">一切皆得端正黠慧，无诸疾苦</td></tr>
+        <tr><td>07</td><td>第七大愿</td><td>众病悉除，身心安乐</td><td class="quote">众病悉除，身心安乐</td></tr>
+        <tr><td>08</td><td>第八大愿</td><td>转女成男，具丈夫相</td><td class="quote">闻我名已，一切皆得转女成男，具丈夫相</td></tr>
+        <tr><td>09</td><td>第九大愿</td><td>出魔罥网，解脱外道</td><td class="quote">出魔罥网，解脱一切外道缠缚</td></tr>
+        <tr><td>10</td><td>第十大愿</td><td>解脱忧苦，枷锁自落</td><td class="quote">闻我名，皆得解脱一切忧苦</td></tr>
+        <tr><td>11</td><td>第十一大愿</td><td>饱足身心，以法味立</td><td class="quote">先以上妙饮食，饱足其身，后以法味……建立之</td></tr>
+        <tr><td>12</td><td>第十二大愿</td><td>衣服宝具，随心满足</td><td class="quote">贫无衣服……若闻我名，皆令满足</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>4 · 出卡脚本 <span class="pill">工具链</span> <code>药师经出卡脚本_make_card.py</code></h3>
+  <div class="card">
+    <p>渲染引擎，移植自地藏经项目，仅替换数据源与系列名。流程：</p>
+    <ol>
+      <li>从 <code>药师经/卡片数据.json</code> 读取卡片文案；</li>
+      <li>用内置模板生成 9:16 HTML（逻辑尺寸 <code>1080×1920</code>）；</li>
+      <li>起本地 http server + playwright-cli，以 <code>SCALE=2</code> 直接出 <code>2160×3840</code> PNG；</li>
+      <li>输出 <code>cards/&lt;序号&gt;-&lt;品名&gt;.png</code>。</li>
+    </ol>
+    <p><b>关键设计</b>：</p>
+    <ul>
+      <li><code>card_ready()</code> 硬规则：<b>白话 / 深一层 / 收尾 三段齐全</b>才出卡——这正是 12 张目前无法出卡的原因。</li>
+      <li><b>防溢出</b>：文案过长时逐级缩小正文字号（≤5 次），仍超界则抛 <code>OVERFLOW</code> 错误，保证卡片高度统一且不裁字。</li>
+      <li><b>配图缺失兜底</b>：图缺失时自动渲染「配图待放」占位框。</li>
+      <li>双后端：优先 <code>playwright-cli</code>，缺失时回退本机 python <code>playwright</code> + chromium。</li>
+    </ul>
+    <p class="muted">版式：金框（2px #bcae7a 直角）→ 系列名 + 编号胶囊 → 标题(76px) + 副题 → 配图区(940×740) → 金句引号框(含出处) → 三段式解读 → 页脚（品名全 + 关键词）。字体 Noto Serif SC / Songti SC。</p>
+  </div>
+
+  <h3>5 · 配图提示词 <span class="pill gold">视觉</span> <code>配图提示词_20261109_051335.md</code></h3>
+  <div class="card">
+    <p>为卡片生成配图的<b>提示词备档</b>，统一风格：</p>
+    <p class="quote">中国风工笔插画，敦煌壁画石青石绿矿物重彩 + 掐丝珐琅琉璃透光质感，净琉璃青金设色，绢本质感，清润通透，琉璃光晕点缀</p>
+    <p><b>覆盖 15 张</b>：12 张竖版愿卡（出图 1024×1536）+ 3 张横幅（净琉璃庄严 / 持名功德 / 十二药叉，出图 1536×1024）。</p>
+    <p><b>构图铁律（任何一张都不可破）</b>：</p>
+    <ul>
+      <li>人物（含脸部五官）完整不被裁切；竖版主体居中、上下云海留白安全区；横幅人物头部绝不贴边、顶底留云纹空隙。</li>
+      <li><b>不要任何文字与水印</b>（出图后如有 AI 水印须裁掉）。</li>
+      <li>命名严格对应 <code>卡片数据.json</code> 的「配图」字段（如 <code>images/01-第一大愿.png</code>）。</li>
+      <li>关键特征锁定：本尊药师琉璃光如来（药钵/宝塔、施无畏印）、日光月光二菩萨胁侍、十二药叉拱卫；设色青绿主色 + 琉璃金线描；背景净琉璃国土、琉璃地、宝树罗网、祥云。</li>
+    </ul>
+    <p class="muted">相对地藏经原版的变化：舍去「水墨结合」，改用「青绿矿物重彩 + 掐丝珐琅琉璃透光质感」，最贴净琉璃「清润通透」；视觉主题由敦煌暖金改为净琉璃青金。</p>
+  </div>
+
+  <h3>6 · 开发标准建议 <span class="pill">沉淀</span> <code>药师经开发标准建议.md</code></h3>
+  <div class="card">
+    <p>把该卡项目<b>沉淀为可复用的开发标准</b>，整合两个来源：①《地藏经》图文卡真实工程经验（<code>AASJS/dizangjing-cards</code>）；②「开发标准」库现有规范（五层架构 L0–L5、四类标准对象 article/theme/card/metrics、硬规则如「不编数字、不编命令、终审权归人、单一数据源、令牌仅环境变量不落盘」）。</p>
+    <p><b>与四类标准对象的最终映射（闭环）</b>：</p>
+    <table>
+      <thead><tr><th>标准对象</th><th>药师经落地形态</th></tr></thead>
+      <tbody>
+        <tr><td><code>sutra/v1</code></td><td>CBETA T14n0449 经文结构化 = 单一数据源（改 JSON 即改卡）</td></tr>
+        <tr><td><code>card</code></td><td>上文 JSON schema（金句 + 三段式 + 关键词）</td></tr>
+        <tr><td><code>theme</code></td><td>「净琉璃青金」配色 + 工笔设色规范（替代敦煌暖金）</td></tr>
+        <tr><td><code>metrics</code></td><td>读诵打卡（is_demo 红线，不归因、不承诺疗效）</td></tr>
+        <tr><td>工具链 / 流程</td><td>make_card.py = L3 渲染工具；读 JSON → 渲染 → 质检校对 → 出卡 = L4 流程</td></tr>
+        <tr><td>中枢</td><td>能力 <code>yaoshi-sutra</code> 登记进 ecosystem.json = L5</td></tr>
+      </tbody>
+    </table>
+    <p><b>佛经图文卡红线（地藏已守，药师照守）</b>：</p>
+    <ul>
+      <li>不虚构：十二大愿金句取 CBETA 原文，不编「第十三愿」；</li>
+      <li>不承诺疗效：标注「经典愿力，非医疗承诺」；</li>
+      <li>出处必标：每卡标 <code>CBETA T14n0449 · 隋·达摩笈多译</code>；</li>
+      <li>视觉不混用：主视觉必须是药师佛，不可误用地藏/观音像。</li>
+    </ul>
+    <p>文末附<b>落地检查清单</b>（9 项勾选），从建骨架 → 出图 → 校对 → 登记能力，形成可照抄的闭环。</p>
+  </div>
+
+  <!-- ================= 架构 ================= -->
+  <h2 id="arch">③ 项目架构与数据流</h2>
+  <p>整套是一个<b>数据驱动</b>的卡片生产线，单一数据源（JSON）向上承接经文底本、向下驱动出卡与配图，并可横向复用到「开发标准」库：</p>
+  <div class="flow">
+    <div class="node"><div class="t">CBETA 经文</div><div class="d">T14n0449<br>达磨笈多译<br>单一事实源</div></div>
+    <div class="arrow">→</div>
+    <div class="node"><div class="t">卡片数据.json</div><div class="d">十二大愿 12 条<br>金句+三段式<br>status:draft</div></div>
+    <div class="arrow">→</div>
+    <div class="node"><div class="t">make_card.py</div><div class="d">读 JSON<br>渲染 1080×1920<br>SCALE=2</div></div>
+    <div class="arrow">→</div>
+    <div class="node"><div class="t">2160×3840 PNG</div><div class="d">cards/<br>净琉璃青金<br>三段式版式</div></div>
+  </div>
+  <div class="flow">
+    <div class="node"><div class="t">配图提示词.md</div><div class="d">净琉璃青金<br>15 张提示词<br>构图铁律</div></div>
+    <div class="arrow">→</div>
+    <div class="node"><div class="t">images/ 配图</div><div class="d">工笔插画<br>裁水印 4:3<br>命名对应</div></div>
+    <div class="arrow">→</div>
+    <div class="node"><div class="t">开发标准库</div><div class="d">L0–L5<br>article/theme<br>/card/metrics</div></div>
+  </div>
+  <div class="callout">
+    <b>横向关系：</b>本项目是《地藏经》图文卡项目 <code>AASJS/dizangjing-cards</code> 的「换皮移植」——目录结构、数据驱动思想、出卡脚本、质检流程完全复用，仅替换<b>经文数据源</b>与<b>视觉主题</b>（敦煌暖金 → 净琉璃青金）。一次搭好，后续任何经典都能照此复制出卡流水线。
+  </div>
+
+  <!-- ================= 进度 ================= -->
+  <h2 id="progress">④ 当前进度与缺口</h2>
+  <div class="grid2">
+    <div class="card">
+      <h3 style="margin-top:0">✅ 已就绪</h3>
+      <ul>
+        <li>经文底本（KR6i0047_001.txt）已入库且通读；</li>
+        <li>卡片数据 12 愿<b>骨架 + 金句</b>已立；</li>
+        <li>出卡脚本 make_card.py 完整可用；</li>
+        <li>配图提示词 15 张已备档；</li>
+        <li>项目 README 与开发标准建议已写。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">⛔ 缺口（阻塞出卡）</h3>
+      <ul>
+        <li><b>12 张愿卡的「白话 / 深一层 / 收尾」全为（待填）</b>——不出卡的根本原因；</li>
+        <li><code>images/</code> 配图未生成（出卡会落「配图待放」占位）；</li>
+        <li><code>cards/</code> 成品 PNG 尚未产出；</li>
+        <li>未建校对表（与 CBETA 逐条核金句的 <code>校对表.md</code> / <code>校对报告.html</code>）；</li>
+        <li>能力 <code>yaoshi-sutra</code> 未登记进 ecosystem.json。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ================= 要点 ================= -->
+  <h2 id="keypoints">⑤ 核心要点</h2>
+  <div class="card">
+    <ul>
+      <li><b>一句话定位</b>：这是一套「把《药师经》拆成可随身读图文卡」的数据驱动脚手架，圣为风格、净琉璃青金视觉。</li>
+      <li><b>设计哲学</b>：单一数据源（JSON）→ 改文案不动代码；金句 + 三段式（白话/深一层/收尾）+ 关键词页脚的固定版式；终审权归人（draft 不出正式卡）。</li>
+      <li><b>质量护栏</b>：不虚构、不承诺疗效、出处必标、视觉不混用——四条红线把「佛经卡」与「普通知识卡」区分开。</li>
+      <li><b>可复用性</b>：移植自地藏经项目，意味着任何经典都能低成本复制同一条流水线。</li>
+      <li><b>当前最大杠杆</b>：把 12 张愿卡的「白话/深一层/收尾」填好，整条流水线即可转起来（出图、出卡、校对）。</li>
+    </ul>
+  </div>
+
+  <!-- ================= 续作 ================= -->
+  <h2 id="next">⑥ 续作建议（路线图）</h2>
+  <div class="card">
+    <ol>
+      <li><b>补全解读文案</b>：为 12 张愿卡填「白话 / 深一层 / 收尾」（可用上一轮《药师经学习手册》的逐愿解读作底稿，按圣为「先破后立、以你对话读者」风格润色）。填完即可将 status 由 draft 改 ready。</li>
+      <li><b>生成配图</b>：按 <code>配图提示词.md</code> 出 15 张图，裁水印、按 4:3 微裁，命名对应 JSON「配图」字段。</li>
+      <li><b>出卡</b>：<code>python make_card.py 01 02 ... 12</code> 批量渲染 2160×3840 PNG。</li>
+      <li><b>校对</b>：建 <code>校对表.md</code>，对照 CBETA 原文逐条核金句（含薰/熏、嚩/缚等异文速查），无误后定稿。</li>
+      <li><b>登记能力</b>：将 <code>yaoshi-sutra</code> 契约条目登记进 ecosystem.json，完成 L5 闭环。</li>
+      <li><b>扩展卡组</b>：按标准建议规划，补「预备篇（礼敬/发愿）」与「细分卡（九横死、十二药叉）」，并配套注音在线阅读页 + 大字疏朗版 PDF。</li>
+    </ol>
+  </div>
+
+  <footer>「药师佛经文」知识库全文件学习报告 · 生成于 2026-11-09 · 内容仅供个人研读与二次创作</footer>
+</div>
+</body>
+</html>
