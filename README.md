@@ -1,6 +1,18 @@
 # 《佛說藥師如來本願經》學習庫
 
+<div align="center">
+
+[![version](https://img.shields.io/badge/version-1.4.1-blue)](https://github.com/AASJS/medicine-buddha-sutra-study)
+![source](https://img.shields.io/badge/source-CBETA%20T14n0449-blueviolet)
+![cards](https://img.shields.io/badge/cards-12%C3%97%209%3A16%20PNG-success)
+![watermark](https://img.shields.io/badge/AI%20watermark-removed-brightgreen)
+![visitors](https://hits.sh/github/AASJS/medicine-buddha-sutra-study.svg)
+
+</div>
+
 > 私人研究倉庫 · 經文原文 + 全文學習報告
+>
+> 訪問統計由外部服務 [hits.sh](https://hits.sh) 提供（需聯網；若所在網絡無法訪問該服務，徽章將不顯示，不影響倉庫使用）。本倉庫為私有庫，故採用靜態徽章而非 GitHub API 動態徽章（動態徽章對私有庫會顯示「invalid」）。
 
 本倉庫收錄《佛說藥師如來本願經》的校對原文，以及一份系統性的學習報告，供個人研讀、複習與二次創作（知識卡片、講稿等）使用。
 
