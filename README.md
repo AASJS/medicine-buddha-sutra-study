@@ -4,15 +4,15 @@
 
 [![version](https://img.shields.io/badge/version-1.4.1-blue)](https://github.com/AASJS/medicine-buddha-sutra-study)
 ![source](https://img.shields.io/badge/source-CBETA%20T14n0449-blueviolet)
-![cards](https://img.shields.io/badge/cards-12%C3%97%209%3A16%20PNG-success)
+![cards](https://img.shields.io/badge/cards-15%C3%97%209%3A16%20PNG-success)
 ![watermark](https://img.shields.io/badge/AI%20watermark-removed-brightgreen)
 ![visitors](https://hits.sh/github/AASJS/medicine-buddha-sutra-study.svg)
 
 </div>
 
-> 私人研究倉庫 · 經文原文 + 全文學習報告
+> 公開研究倉庫 · 經文原文 + 全文學習報告 + 知識卡工程
 >
-> 訪問統計由外部服務 [hits.sh](https://hits.sh) 提供（需聯網；若所在網絡無法訪問該服務，徽章將不顯示，不影響倉庫使用）。本倉庫為私有庫，故採用靜態徽章而非 GitHub API 動態徽章（動態徽章對私有庫會顯示「invalid」）。
+> 訪問統計由外部服務 [hits.sh](https://hits.sh) 提供（需聯網；若所在網絡無法訪問該服務，徽章將不顯示，不影響倉庫使用）。徽章採用靜態 shields，便於在任意閱讀環境下穩定顯示。
 
 本倉庫收錄《佛說藥師如來本願經》的校對原文，以及一份系統性的學習報告，供個人研讀、複習與二次創作（知識卡片、講稿等）使用。
 
@@ -84,8 +84,8 @@
 ## 五、來源與版權聲明
 
 - 經文原文取自 IMA 知識庫「藥師佛經文」中的 CBETA 校對本（`KR6i0047_001.txt` / T14n0449）。
-- CBETA 漢文大藏經文本採用「自由軟體基金會的 GNU 通用公共授權」（部分採用創用 CC 授權），本倉庫僅作**個人學習用途**整理與保存。
-- 本倉庫為**私人倉庫**，學習報告中的白話釋義僅供學修參考，不作任何醫療、政治或宗教權威判斷。
+- CBETA 漢文大藏經文本採用「自由軟體基金會的 GNU 通用公共授權」（部分採用創用 CC 授權）；本倉庫依其授權源保留權利聲明，開放供大眾學習參考。
+- 本倉庫已設為**公開倉庫**；學習報告中的白話釋義僅供學修參考，不作任何醫療、政治或宗教權威判斷。
 
 ---
 
