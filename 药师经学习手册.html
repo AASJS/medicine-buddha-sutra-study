@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《佛說藥師如來本願經》学习手册</title>
+<style>
+  :root{
+    --ink:#2b2620; --paper:#f6f1e7; --jade:#2f6f63; --jade-d:#1f4d45;
+    --gold:#b8893b; --rose:#9c5b4a; --line:#d9cdb5; --soft:#efe7d6;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Serif SC","Songti SC",STSong,"SimSun",serif;line-height:1.9;
+    font-size:17px;}
+  .wrap{max-width:980px;margin:0 auto;padding:40px 26px 80px;}
+  header.hero{text-align:center;padding:46px 18px;border-bottom:3px double var(--gold);margin-bottom:30px;}
+  header.hero h1{font-size:30px;letter-spacing:4px;margin:0 0 8px;color:var(--jade-d);}
+  .sub{color:var(--rose);letter-spacing:2px;font-size:15px;}
+  .meta{margin-top:18px;font-size:14px;color:#6b6253;line-height:2;}
+  .meta b{color:var(--jade-d);}
+  nav.toc{background:var(--soft);border:1px solid var(--line);border-radius:10px;
+    padding:18px 24px;margin:28px 0;columns:2;column-gap:34px;font-size:15px;}
+  nav.toc h3{margin:0 0 8px;column-span:all;color:var(--gold);letter-spacing:2px;}
+  nav.toc a{color:var(--jade);text-decoration:none;}
+  nav.toc a:hover{text-decoration:underline;}
+  nav.toc ol{margin:0;padding-left:20px;}
+  section{margin:40px 0;scroll-margin-top:20px;}
+  h2{color:var(--jade-d);border-left:6px solid var(--gold);padding-left:14px;
+    letter-spacing:2px;font-size:23px;margin-bottom:16px;}
+  h3{color:var(--rose);font-size:18px;margin:22px 0 8px;}
+  p{margin:10px 0;}
+  .src{background:#fffdf7;border:1px solid var(--line);border-radius:8px;
+    padding:14px 18px;color:#5a5142;font-style:italic;font-size:15.5px;
+    border-left:4px solid var(--jade);}
+  .now{background:#fbf6ea;border-radius:8px;padding:12px 18px;margin:10px 0;
+    border:1px dashed var(--line);}
+  .now b{color:var(--jade-d);}
+  .vow{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:16px 0;
+    background:linear-gradient(180deg,#fffdf7,#f4ecda);}
+  .vow .no{display:inline-block;background:var(--jade);color:#fff;border-radius:20px;
+    padding:2px 14px;font-size:14px;letter-spacing:1px;margin-bottom:8px;}
+  .vow h3{margin:4px 0 10px;color:var(--jade-d);}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px;}
+  th,td{border:1px solid var(--line);padding:9px 12px;vertical-align:top;}
+  th{background:var(--jade-d);color:#f6f1e7;font-weight:600;letter-spacing:1px;}
+  tbody tr:nth-child(even){background:#fbf6ea;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin:14px 0;}
+  .card{background:#fffdf7;border:1px solid var(--line);border-radius:10px;padding:12px 14px;}
+  .card b{color:var(--rose);}
+  .note{font-size:14px;color:#7a705e;background:var(--soft);border-radius:8px;
+    padding:10px 16px;margin:12px 0;}
+  .steps{counter-reset:s;list-style:none;padding-left:0;}
+  .steps li{counter-increment:s;position:relative;padding:8px 8px 8px 46px;margin:8px 0;
+    background:#fffdf7;border:1px solid var(--line);border-radius:8px;}
+  .steps li::before{content:counter(s);position:absolute;left:12px;top:8px;
+    width:26px;height:26px;background:var(--gold);color:#fff;border-radius:50%;
+    text-align:center;line-height:26px;font-size:14px;}
+  .end{text-align:center;margin-top:60px;padding-top:26px;border-top:3px double var(--gold);
+    color:#6b6253;font-size:14px;letter-spacing:1px;}
+  .kbd{background:#efe7d6;border-radius:5px;padding:1px 7px;font-size:13px;color:var(--jade-d);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>《佛說藥師如來本願經》</h1>
+  <div class="sub">学习手册 · 全文结构与义理疏解</div>
+  <div class="meta">
+    <b>译　者：</b>隋·天竺三藏 达磨笈多（Dharmagupta）译<br>
+    <b>藏经位置：</b>大正藏第14册 No.449（<b>T14n0449</b>）；高丽藏编号 <b>KR6i0047</b><br>
+    <b>卷　数：</b>一卷　·　<b>性质：</b>《药师琉璃光如来本愿功德经》五种汉译中年代最早者（隋代初译）<br>
+    <b>本文件来源：</b>IMA 知识库「药师佛经文」中的 <span class="kbd">KR6i0047_001.txt</span>（CBETA 校对本）
+  </div>
+</header>
+
+<nav class="toc">
+  <h3>目录 · 全经脉络</h3>
+  <ol>
+    <li><a href="#s1">全经结构总览</a></li>
+    <li><a href="#s2">十二大愿（核心）</a></li>
+    <li><a href="#s3">净琉璃世界与二胁士</a></li>
+    <li><a href="#s4">闻名灭罪·四类众生</a></li>
+    <li><a href="#s5">受持功德与往生</a></li>
+    <li><a href="#s6">供养仪轨（实修）</a></li>
+    <li><a href="#s7">救脱菩萨·病苦回生·国难</a></li>
+    <li><a href="#s8">九横死</a></li>
+    <li><a href="#s9">七难（国王护国）</a></li>
+    <li><a href="#s10">十二药叉大将</a></li>
+    <li><a href="#s11">经题三称</a></li>
+    <li><a href="#s12">核心名相与学习建议</a></li>
+  </ol>
+</nav>
+
+<section id="s1">
+  <h2>一、全经结构总览</h2>
+  <p>本经虽只有一卷，但结构完整，可分三大部分：<b>序分 → 正宗分 → 流通分</b>。建议在研读时先掌握这条主线，再深入每一段。</p>
+  <div class="now">
+    <b>① 序分</b><br>
+    · <b>经序</b>（慧矩撰）：说明本经是「致福消灾之要法」，并交代翻译源流——宋孝武时沙门慧简已译，但「梵宋不融、文辞杂糅」；隋大业十一年，慧矩与达磨笈多等据三种本子校定重译，于大业十二年十二月八日译讫。<br>
+    · <b>译记</b>：「新翻药师经……此本最定，诸读诵者愿莫更疑」。
+  </div>
+  <div class="now">
+    <b>② 正宗分（主体，约占全文九成）</b><br>
+    1. 证信序：如是我闻……佛在毗舍离国乐音树下，八千比丘、三万六千菩萨、国王大臣天龙八部围绕。<br>
+    2. 发起序：曼殊室利（文殊）承佛威神，请佛演说诸佛名号与本誓大愿。<br>
+    3. 东方净琉璃世界与药师琉璃光如来。<br>
+    4. <b>十二大愿</b>（全经核心）。<br>
+    5. 佛土功德庄严、日光月光二菩萨。<br>
+    6. 闻名灭罪（慳贪、破戒、妒忌、斗讼四类众生）。<br>
+    7. 受持功德、往生极乐或天道。<br>
+    8. 流通供养利益、四天王护持。<br>
+    9. 供养仪轨与种种免难。<br>
+    10. 阿难问疑、佛答「诸佛境界难信」。<br>
+    11. 救脱菩萨说：临终回生、国王七难、九横死。<br>
+    12. 十二药叉大将自誓护法。
+  </div>
+  <div class="now">
+    <b>③ 流通分</b><br>
+    佛为阿难说本经<b>三个经名</b>；大众欢喜奉行。
+  </div>
+  <div class="note">提示：本经与后世最通行的玄奘译《药师琉璃光如来本愿功德经》（T14n0450）相比，少了「八大菩萨」「十二神将咒」等后期增益，更显古朴，十二大愿的措辞也略有不同，是研究药师法门源流的重要早期文本。</div>
+</section>
+
+<section id="s2">
+  <h2>二、十二大愿（全经核心）</h2>
+  <p>佛告曼殊室利：药师琉璃光如来行菩萨道时，发此十二大愿。总的精神是——<b>以自身成佛的功德力，回向一切众生，令其在世间与出世间皆得圆满</b>。以下逐愿对照原文并作现代语译与要义。</p>
+
+  <div class="vow">
+    <span class="no">第一大愿</span>
+    <h3>光明庄严愿</h3>
+    <div class="src">「愿我来世于佛菩提得正觉时，自身光明炽然，照曜无量无数无边世界，三十二丈夫大相及八十小好以为庄严；我身既尔，令一切众生如我无异。」</div>
+    <div class="now"><b>要义：</b>成佛时身放无量光明，具足三十二相、八十种好；更发愿令一切众生都与佛「无二无别」。这是「众生皆具佛性、皆可成佛」的彻底平等愿。</div>
+  </div>
+
+  <div class="vow">
+    <span class="no">第二大愿</span>
+    <h3>身如琉璃愿</h3>
+    <div class="src">「愿我来世得菩提时，身如琉璃，内外清净，无复瑕垢，光明旷大……焰网庄严，过于日月；若有众生……昏暗及夜，莫知方所，以我光故，随意所趣，作诸事业。」</div>
+    <div class="now"><b>要义：</b>佛身如琉璃般内外澄澈无垢，光明胜过日月。众生若在黑暗、迷惘中不知方向，凭佛光便能随心所往、成办事业。喻指佛的智能光明破除众生无明。</div>
+  </div>
+
+  <div class="vow">
+    <span class="no">第三大愿</span>
+    <h3>资生无尽愿</h3>
+    <div class="src">「愿我来世得菩提时，以无边无限智慧方便，令无量众生界受用无尽，莫令一人有所少乏。」</div>
+    <div class="now"><b>要义：</b>以无量智慧与方便，令一切众生受用无穷，不使一人有所匮乏。这是「物质与精神皆得丰足」的愿。</div>
+  </div>
+
+  <div class="vow">
+    <span class="no">第四大愿</span>
+    <h3>安立大乘愿</h3>
+    <div class="src">「愿我来世得菩提时，诸有众生行异道者，一切安立菩提道中，行声闻道、行辟支佛道者，皆以大乘而安立之。」</div>
+    <div class="now"><b>要义：</b>无论外道、声闻、缘觉，皆被安立于「菩提道」（大乘佛道）之中。体现药师佛「不舍一众」的包容与引摄。</div>
+  </div>
+
+  <div class="vow">
+    <span class="no">第五大愿</span>
+    <h3>戒行无缺愿</h3>
+    <div class="src">「愿我来世得菩提时，若有众生于我法中修行梵行……一切皆得不缺减戒，具三聚戒，无有破戒趣恶道者。」</div>
+    <div class="now"><b>要义：</b>于药师法中修梵行者，皆得圆满、不缺减的戒体，具足「三聚净戒」，不致因破戒而堕恶道。</div>
+  </div>
+
+  <div class="vow">
+    <span class="no">第六大愿</span>
+    <h3>诸根具足愿</h3>
+    <div class="src">「愿我来世得菩提时，若有众生，其身下劣，诸根不具，丑陋顽愚，聋盲跛躄，身挛背傴，白癞癫狂……闻我名已，一切皆得，诸根具足，身分成满。」</div>
+    <div class="now"><b>要义：</b>残障、丑陋、聋盲、瘫痪、驼背、麻风、癫狂等身苦众生，闻佛名号皆得诸根具足、身相圆满。这是药师佛「疗身病」最著名的愿。</div>
+  </div>
+
+  <div class="vow">
+    <span class="no">第七大愿</span>
+    <h3>除病离贫愿</h3>
+    <div class="src">「愿我来世得菩提时，若有众生，诸患逼切，无护无依，无有住处，远离一切资生医药，又无亲属，贫穷可愍……闻我名号，众患悉除，无诸痛恼，乃至究竟无上菩提。」</div>
+    <div class="now"><b>要义：</b>孤苦贫病、无医无亲的众生，闻佛名号病苦皆除，直至成就无上菩提。</div>
+  </div>
+
+  <div class="vow">
+    <span class="no">第八大愿</span>
+    <h3>转女成男愿</h3>
+    <div class="src">「愿我来世得菩提时，若有女人，为妇人百恶所逼恼故，厌离女身，愿舍女形，闻我名已，转女人身成丈夫相，乃至究竟无上菩提。」</div>
+    <div class="now"><b>要义：</b>厌患女身、愿舍女形的女人，闻佛名号即转成丈夫相，直至成佛。反映古代女性解脱的愿力（后世亦用以安慰产妇临产之苦，见流通分）。</div>
+  </div>
+
+  <div class="vow">
+    <span class="no">第九大愿</span>
+    <h3>正见解脱愿</h3>
+    <div class="src">「愿我来世得菩提时，令一切众生解脱魔网，若堕种种异见稠林，悉当安立置于正见，次第示以菩萨行门。」</div>
+    <div class="now"><b>要义：</b>令众生出离魔网与种种邪见密林，安立于正见，再依次第开示菩萨行门。这是「疗心病、破邪见」的愿。</div>
+  </div>
+
+  <div class="vow">
+    <span class="no">第十大愿</span>
+    <h3>解脱忧苦愿</h3>
+    <div class="src">「愿我来世得菩提时，若有众生，种种王法，系缚、鞭挞、牢狱、应死，无量灾难，悲忧煎迫，身心受苦……以我福力，皆得解脱一切苦恼。」</div>
+    <div class="now"><b>要义：</b>被国法囚禁、鞭打、处死，或遭无量灾难、悲忧煎迫的众生，凭佛福力皆得解脱一切苦恼。</div>
+  </div>
+
+  <div class="vow">
+    <span class="no">十一大愿</span>
+    <h3>先食后法愿</h3>
+    <div class="src">「愿我来世得菩提时，若有众生，饥火烧身，为求食故，作诸恶业，我于彼所，先以最妙色香味食，饱足其身，后以法味，毕竟安乐而建立之。」</div>
+    <div class="now"><b>要义：</b>为求食而造恶的饥民，先以最美饮食饱足其身，再以佛法滋味令其究竟安乐。体现「先以欲钩牵，后令入佛智」的善巧。</div>
+  </div>
+
+  <div class="vow">
+    <span class="no">十二大愿</span>
+    <h3>衣服庄严愿</h3>
+    <div class="src">「愿我来世得菩提时，若有众生，贫无衣服，寒热蚊虻，日夜逼恼，我当施彼，随用衣服……亦以一切宝庄严具，花鬘、涂香、鼓乐、众伎，随诸众生所须之，具皆令满足。」</div>
+    <div class="now"><b>要义：</b>贫无衣被、寒热蚊虻逼恼的众生，施与称心衣服及种种庄严、香花、鼓乐，令所需皆得满足。十二愿以「衣食丰足」圆满收束，呼应第三愿的「受用无尽」。</div>
+  </div>
+
+  <div class="note">综合来看：第一、二愿是「佛果庄严」；第三至十二愿是「众生利乐」，可归类为——<b>物质丰足</b>（三、十一、十二）、<b>修行保障</b>（四、五）、<b>疗治身病</b>（六、七）、<b>转烦恼为菩提</b>（八、九、十）。经文强调：「此十二大愿……乃至穷劫说不可尽。」</div>
+</section>
+
+<section id="s3">
+  <h2>三、净琉璃世界与二胁士</h2>
+  <div class="src">「彼佛国土一向清净，无女人形，离诸欲恶，亦无一切恶道苦声，琉璃为地，城阙、垣墙、门窓、堂阁柱梁、斗拱、周匝罗网，皆七宝成，如极乐国……于其国中有二菩萨摩诃萨，一名日光，二名月光……持彼世尊药师琉璃光如来正法之藏。」</div>
+  <div class="now">
+    <b>世界特质：</b>东方「净琉璃世界」一向清净，无女人相、离欲恶、无恶道苦声；地面是琉璃，楼阁栏楯皆七宝所成，庄严如同西方极乐世界。<br>
+    <b>二大菩萨：</b>日光菩萨、月光菩萨，为此土无量菩萨之上首，住持药师如来正法藏。<br>
+    <b>劝愿：</b>佛言信心善男子善女人「应当愿生彼佛国土」。
+  </div>
+</section>
+
+<section id="s4">
+  <h2>四、闻名灭罪 · 四类众生</h2>
+  <p>正宗分中段，佛以四组众生为例，说明「但闻药师琉璃光如来名号」，纵曾造恶，亦能拔出苦趣、还生人道并转修善法。</p>
+  <table>
+    <tr><th>类别</th><th>原造之业</th><th>闻名的利益</th></tr>
+    <tr><td><b>慳贪众生</b></td><td>不识善恶、吝财不舍，见乞者如割身肉；命终生饿鬼、畜生道。</td><td>以昔曾闻名号，于鬼/畜道中名号暂现，即还生人道，得宿命智，好行惠施、乃至舍头目手足。</td></tr>
+    <tr><td><b>破戒众生</b></td><td>受戒破戒、破行、破正见；或多闻增上慢、谤正法为魔伴。</td><td>本应堕地狱，以闻名号威力，舍命还生人道，正见精进、出家学道、渐修菩萨行。</td></tr>
+    <tr><td><b>妒忌众生</b></td><td>以妒忌故但自称赞、不赞他人，轻慢于人。</td><td>本受三恶道苦，以善根解脱，诸根猛利、聪慧博识、常随良友、破无明壳、解脱生老病死。</td></tr>
+    <tr><td><b>斗讼咒术众生</b></td><td>好喜乖离、更相斗讼，杀生祭祀、书怨人字作形、行毒害咒术厌魅蛊道起尸鬼咒。</td><td>闻佛名号，此诸恶事不能伤损，皆得互起慈心、益心、无嫌恨心，各各欢悦、更相摄受。</td></tr>
+  </table>
+  <div class="note">重点：此段突出药师法门的「他力救拔」——未必先修定慧，只要曾「闻名」，临终或中阴时名号一现前，即能转业。这是本经「易行道」特质所在。</div>
+</section>
+
+<section id="s5">
+  <h2>五、受持功德与往生</h2>
+  <div class="src">「此诸四众——比丘、比丘尼、优婆塞、优婆私——及余信心善男子、善女人等，受八分斋，或复一年，或复三月受持诸戒，以此善根……若欲往生西方极乐世界阿弥陀如来所者，由得闻彼世尊药师琉璃光如来名号故，于命终时，有八菩萨乘空而来，示其道径……若复此人欲生天上，即得往生……若有女人得闻说此如来名号至心受持，此人于后永离女身。」</div>
+  <div class="now">
+    <b>四众与在家信众</b>若受持八关斋戒（一年或三月），以此善根：<br>
+    · 愿生<b>西方极乐</b>者，命终时<b>八菩萨</b>乘空来迎、示其道径，于莲花中化生；<br>
+    · 愿生<b>天上</b>者，即得往生，善根无尽，天寿尽还生人间为转轮王或刹利、婆罗门大族，富贵具足；<br>
+    · <b>女人</b>至心受持，永离女身。
+  </div>
+</section>
+
+<section id="s6">
+  <h2>六、供养仪轨（实修方法）</h2>
+  <p>曼殊室利誓愿流布此经（「乃至睡中亦以佛名寤其耳」），并说受持、读诵、书写、供养之功德——四大天王与无量诸天皆诣其所，此经流行处「无复横死、不为诸鬼所持夺其魂魄」。</p>
+  <p>佛复说具体供养法：</p>
+  <ol class="steps">
+    <li>作如来形像，于清净处散华、烧香、悬幡盖，澡浴清洁、着新净衣。</li>
+    <li>生无垢浊心、无怒害心，于一切众生起利益、慈悲喜舍平等心。</li>
+    <li>七曰七夜受八分斋、食清净食。</li>
+    <li>鼓乐歌赞、右绕佛像，念彼如来本昔大愿并解释此经。</li>
+    <li>如所思、如所愿求，一切所欲皆得圆满——求长寿得长寿、求福报得福报、求自在得自在、求男女得男女。</li>
+  </ol>
+  <div class="now"><b>免难效用：</b>若有恶梦、恶相、怪鸟、百怪，或以种种众具供养恭敬彼佛，一切不吉祥皆隐没；水火刀毒、险难、恶兽毒虫之怖，忆念供养皆得解脱；他国侵扰、贼盗反乱，亦应念彼如来。</div>
+  <div class="now"><b>持戒救免：</b>尽形三皈、不事余天，或持五戒、十戒、菩萨戒、比丘/比丘尼戒，若毁犯畏堕恶道，能供养药师如来者决定不受三恶道报。<b>临产女人</b>称名供养，速得解脱，所生之子身分具足、形色端正、利根聪安、少病无夺魂。</div>
+</section>
+
+<section id="s7">
+  <h2>七、救脱菩萨 · 病苦回生 · 国难</h2>
+  <p>阿难疑「但念如来名获尔许功德」难以信受，佛答：佛境界诚为难信，是如来威力所持；又诫「人身难得、信敬三宝难、闻彼名号倍难于此」。</p>
+  <p>会中<b>救脱菩萨</b>起问未来众生重病垂死之事：</p>
+  <div class="src">「其人……死相现前……阎摩使人引其神识，置于阎摩法王之前……若能为此病人归依彼世尊药师琉璃光如来，如法供养，即得还复……经七日、或二十一日、或三十五日、或四十九日，神识还已，具忆所有善恶业报，由自证故，乃至失命不造恶业。」</div>
+  <div class="now">
+    <b>为病苦者修法（七日七夜）：</b>受八分斋；随力办饮食众具供养比丘僧；昼夜六时礼拜供养药师如来；<b>四十九遍读诵此经</b>；然<b>四十九灯</b>；造<b>七躯</b>如来像，每像前各置七灯（灯量大如车轮，或四十九日光明不绝）；造<b>五色彩幡长四十九尺</b>。<br>
+    <b>护国法（灌顶刹利王）：</b>遇人民疾疫、外侵、内逆、星变、日月薄蚀、非时风雨、过时不雨等难时，王当对一切众生起慈愍心、赦诸系闭，依前仪轨供养药师如来，则疆界安隐、风雨以时、禾稼成就、无病安乐、恶相不现、王寿色力增益。
+  </div>
+</section>
+
+<section id="s8">
+  <h2>八、九横死</h2>
+  <p>阿难问「已尽之命而可更延？」救脱答：佛说有「九横死」，故教以咒药方便（横死＝非命、不该死而死者）。</p>
+  <table>
+    <tr><th>序号</th><th>横死</th><th>说明</th></tr>
+    <tr><td>一</td><td>病无医药</td><td>得病非重，然无医药及看病人，或医人疗治失所，非时而死。</td></tr>
+    <tr><td>二</td><td>王法所杀</td><td>被国法处死。</td></tr>
+    <tr><td>三</td><td>游猎放逸</td><td>游猎、放逸、淫醉无度，为诸非人害其魂魄。</td></tr>
+    <tr><td>四</td><td>火所烧</td><td>被火烧死。</td></tr>
+    <tr><td>五</td><td>水所溺</td><td>被水淹死。</td></tr>
+    <tr><td>六</td><td>恶兽所吞</td><td>入师子、虎豹、诸恶兽中。</td></tr>
+    <tr><td>七</td><td>饥渴所困</td><td>不得饮食，因此致死。</td></tr>
+    <tr><td>八</td><td>厌祷毒药</td><td>被厌祷、毒药、起尸鬼等所损害。</td></tr>
+    <tr><td>九</td><td>投岩取死</td><td>投岩自杀取死。</td></tr>
+  </table>
+  <div class="note">「其余复有无量诸横」——九者只是略说。持诵药师经、供养药师如来，正是为免此九种横死。</div>
+</section>
+
+<section id="s9">
+  <h2>九、七难（国王护国）</h2>
+  <p>救脱菩萨所说，灌顶刹利王当以慈心、赦囚、供养药师如来而消除的七种国家灾难：</p>
+  <div class="grid">
+    <div class="card"><b>① 人民疾疫难</b><br>瘟疫流行</div>
+    <div class="card"><b>② 他方侵逼难</b><br>外敌入侵</div>
+    <div class="card"><b>③ 自界反逆难</b><br>内部叛乱</div>
+    <div class="card"><b>④ 星宿变怪难</b><br>星象凶变</div>
+    <div class="card"><b>⑤ 日月薄蚀难</b><br>日食月食</div>
+    <div class="card"><b>⑥ 非时风雨难</b><br>不时而至的风雨</div>
+    <div class="card"><b>⑦ 过时不雨难</b><br>旱灾不雨</div>
+  </div>
+</section>
+
+<section id="s10">
+  <h2>十、十二药叉大将</h2>
+  <p>会中十二药叉大将与各自七千夜叉眷属，同声白佛：蒙佛威力得闻药师如来名号，不复有恶道之怖；愿尽形归依三宝，「荷负一切众生，为作义利，饶益安乐」，凡流布此经、持名供养之处，皆卫护其人、解脱苦难、满其所求。</p>
+  <div class="src">「宫毘罗大将、跋折罗大将、迷佉罗大将、安捺罗大将、安怛罗大将、摩涅罗大将、因陀罗大将、波异罗大将、摩呼罗大将、真达罗大将、招度罗大将、鼻羯罗大将」</div>
+  <table>
+    <tr><th>序号</th><th>本经译名</th><th>通行译名（参照）</th></tr>
+    <tr><td>1</td><td>宫毘罗</td><td>宫毗罗（Kuṃbhīra）</td></tr>
+    <tr><td>2</td><td>跋折罗</td><td>跋折罗（Vajra）</td></tr>
+    <tr><td>3</td><td>迷佉罗</td><td>迷佉罗（Mihira）</td></tr>
+    <tr><td>4</td><td>安捺罗</td><td>安底罗（Aṇḍira）</td></tr>
+    <tr><td>5</td><td>安怛罗</td><td>頞你罗（Indira）</td></tr>
+    <tr><td>6</td><td>摩涅罗</td><td>珊底罗（Saṃdhila）</td></tr>
+    <tr><td>7</td><td>因陀罗</td><td>因达罗（Indra）</td></tr>
+    <tr><td>8</td><td>波异罗</td><td>波夷罗（Pajra）</td></tr>
+    <tr><td>9</td><td>摩呼罗</td><td>摩虎罗（Mahora）</td></tr>
+    <tr><td>10</td><td>真达罗</td><td>真达罗（Cintā）</td></tr>
+    <tr><td>11</td><td>招度罗</td><td>招杜罗（Catura）</td></tr>
+    <tr><td>12</td><td>鼻羯罗</td><td>毘羯罗（Vikala）</td></tr>
+  </table>
+  <div class="note">各译本音译略有出入，本表「通行译名」参照玄奘等本，供对照。后世更将十二大将配十二生肖、十二时辰，形成「本命药叉」护身之说；本经本身未明言此配属，宜知其与后期增益之别。</div>
+</section>
+
+<section id="s11">
+  <h2>十一、经题三称</h2>
+  <p>阿难问「此经何名？云何奉持？」佛答本经有三名，皆应受持：</p>
+  <div class="now">
+    ① <b>《药师琉璃光如来本昔所发殊胜大愿》</b>——标佛本愿；<br>
+    ② <b>《十二夜叉大将自誓》</b>——标护法誓愿；<br>
+    ③ <b>《净一切业障》</b>——标法门功用（净除一切业障）。
+  </div>
+  <div class="note">「净一切业障」一名，正呼应前文闻名灭罪、回生不造恶业之核心效用，可作全经宗旨之凝练。</div>
+</section>
+
+<section id="s12">
+  <h2>十二、核心名相与学习建议</h2>
+  <h3>关键名相速查</h3>
+  <table>
+    <tr><th>名相</th><th>释义</th></tr>
+    <tr><td>药师琉璃光如来</td><td>东方净琉璃世界教主，「药师」表疗治众生身心诸病，「琉璃光」表清净光明之智。</td></tr>
+    <tr><td>曼殊室利</td><td>文殊菩萨，本经发起者，代表大智与慈悲请法。</td></tr>
+    <tr><td>净琉璃世界</td><td>东方佛国，琉璃为地、七宝庄严，如极乐国，无女人、无恶道。</td></tr>
+    <tr><td>日光 / 月光菩萨</td><td>净琉璃世界二胁士，住持药师正法藏。</td></tr>
+    <tr><td>八分斋 / 八关斋戒</td><td>一日一夜的出家式净戒（不杀、不盗、不淫、不妄语、不饮酒、不涂饰香鬘、不歌舞观听、不卧高广大床、不非时食）。</td></tr>
+    <tr><td>横死</td><td>非其命数、意外或不应当死而死（见九横死）。</td></tr>
+    <tr><td>救脱菩萨</td><td>说临终回生、国王护国、九横死之法的大菩萨。</td></tr>
+    <tr><td>十二药叉大将</td><td>誓愿护持药师法门与持经众生之夜叉统领，各领七千眷属。</td></tr>
+  </table>
+
+  <h3>学习建议（由浅入深）</h3>
+  <ol class="steps">
+    <li><b>先读熟十二大愿</b>——这是全经骨架，建议每日诵一愿、思其义，体会「愿愿回向众生」。</li>
+    <li><b>对照白话</b>——以本手册「原文＋要义」逐段消化正宗分，不必强求一次通晓。</li>
+    <li><b>抓三根主线</b>：①佛愿（十二大愿）②佛土（净琉璃）③佛名（闻名灭罪、免横死）。</li>
+    <li><b>落实实修</b>：选「持名」或「诵经＋供灯／幡」任一简便法，体验「求长寿得长寿、求福报得福报」之信。</li>
+    <li><b>对照异译</b>：有条件可读玄奘译《药师琉璃光如来本愿功德经》（T14n0450），看十二大愿措辞与增益部分，加深理解。</li>
+  </ol>
+  <div class="note">本手册依 IMA 知识库「药师佛经文」中的 CBETA 校对本（KR6i0047_001.txt / T14n0449）整理，原文引文保留底本用字，释义以现代语体辅助理解，仅供参考学修，不作任何医疗、政治或宗教权威判断。</div>
+</section>
+
+<div class="end">
+  《佛說藥師如來本願經》学习手册 · 全文结构 · 十二大愿 · 九横死 · 十二药叉大将<br>
+  愿以此学习功德，普及于一切，我等与众生，皆共成佛道。
+</div>
+
+</div>
+</body>
+</html>
